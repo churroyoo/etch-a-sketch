@@ -1,30 +1,34 @@
 .gridContainer{
     margin: auto;
-    background-color: rgb(235, 235, 235);
-    height: 240px;
-    width: 240px;
+    border: 4px solid rgb(225, 225, 225);
+    border-radius: 12px;
+    height: 480px;
+    width: 480px;
     padding: 8px;
     display: flex;
 }
 
 .columns{
-    border: .25px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0px;
 }
 
-.rows{
-    
-    border: .25px solid rgb(0, 0, 0);
+.grid{
+    border: .1px solid rgb(121, 121, 121);
     background-color: rgb(255, 255, 255);
     flex: 1;
-    gap: 0px;
+}
+
+.hover {
+    background-color: black;
 }
 
 button{
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 24px;
+    border: 1px solid black;
     display: block;
     margin: 24px auto;
 }
