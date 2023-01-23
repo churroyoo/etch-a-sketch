@@ -1,0 +1,30 @@
+.gridContainer{
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    height: 240px;
+    width: 240px;
+    padding: 8px;
+    display: flex;
+}
+
+.columns{
+    border: .25px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.rows{
+    
+    border: .25px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    gap: 0px;
+}
+
+button{
+    display: block;
+    margin: 24px auto;
+}
