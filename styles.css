@@ -5,7 +5,7 @@ body{
     height: 100vh;
 }
 
-#sketchPad {
+.sketchPad {
     background-color: blue;
     border-radius: 8px;
     padding: 16px;
@@ -16,9 +16,13 @@ body{
     flex-wrap: wrap;
 }
 
-#sketchPad div {
+.sketchPad div {
     box-sizing: border-box;
     background-color: white;
     border: 1px solid black;
     flex: 0 0 80px;
+}
+
+#fill{
+    background-color: red;
 }
