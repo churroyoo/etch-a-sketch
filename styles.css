@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#sketchPad {
+    background-color: blue;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: hidden;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sketchPad div {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid black;
+    flex: 0 0 80px;
+}
