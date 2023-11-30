@@ -3,6 +3,14 @@ const button = document.querySelector('.setGrid')
 
 createBoard(16)
 
+sketchPad.addEventListener('mouseover', (event)=>{
+    console.log(event.target)
+    if (event.target.className === 'square'){
+        event.target.classList.add('fill')
+        console.log(event.target)
+    }
+})
+
 function createBoard(size) {
     let board = [];
 
@@ -15,9 +23,7 @@ function createBoard(size) {
         for (let column = 1; column <= size; column++){
             board[row][column] = column
             const square = document.createElement('div');
-            square.addEventListener('mouseover', (event)=>{
-                event.target.id = 'fill'
-            })
+            square.classList.add('square')
             boardRow.append(square)
         }
     }
@@ -31,7 +37,12 @@ function removeSquares(){
 }
 
 button.addEventListener('click', () => {
-    let squares = prompt('Grid Size?' , 1)
-    removeSquares()
-    createBoard(squares)
+    let squares = prompt('How big do you want each side? Max Size: 100' , 1)
+
+    if (squares < 101){
+        removeSquares()
+        createBoard(squares)
+    }else{
+        alert("We can't build it that big!")
+    }
 })
